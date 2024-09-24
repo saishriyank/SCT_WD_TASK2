@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #007bff, #ff6f91);
+  }
+  
+  .stopwatch-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2.5rem;
+  }
+  
+  .time-display {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  .control-btn1{
+    padding: 10px 20px;
+    margin: 0 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: green;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .control-btn2{
+    padding: 10px 20px;
+    margin: 0 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(224, 72, 72);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .control-btn3{
+    padding: 10px 20px;
+    margin: 0 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(11, 151, 239);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  .control-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .control-btn:active {
+    transform: scale(0.95);
+  }
+  
+  .laps-list {
+    list-style-type: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .laps-list li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #333;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .laps-list li:nth-child(even) {
+    background-color: #e9ecef;
+  }
+  
+  /* Scrollbar Styling */
+  .laps-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .laps-list::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .time-display {
+      font-size: 3rem;
+    }
+  
+    .control-btn {
+      padding: 8px 16px;
+    }
+  }
+  
